@@ -1,0 +1,14 @@
+<mat-accordion multi>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       <h3 class="style">LISTAR TODAS AS MINHAS TAREFAS </h3>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-agenda-task [tasks]="tarefasParaHoje"></app-agenda-task>
+    <app-agenda-task [tasks]="tarefasParaAmanha"></app-agenda-task>
+    <app-agenda-task [tasks]="tarefasParaOsProximosDias"></app-agenda-task>
+  </mat-expansion-panel>
+
+</mat-accordion>
