@@ -1,3 +1,4 @@
+import { DatepipeComponent } from './datepipe/datepipe.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AgendaComponent } from './agenda/agenda.component';

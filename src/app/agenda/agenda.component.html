@@ -6,7 +6,7 @@
         Meu Dia
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <app-agenda-task [tasks]="tarefasParaHoje"></app-agenda-task>
+    <app-agenda-task [tasks]="tarefasParaHoje"> </app-agenda-task>
   </mat-expansion-panel>
 
   <mat-expansion-panel>
@@ -18,6 +18,9 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
     <app-agenda-task [tasks]="tarefasParaAmanha"></app-agenda-task>
+     <app-tests-datepipe>todayDate</app-tests-datepipe>
+     <!-- !--não consegui fazer a ligação entre
+    a data escolhida para mostrar na tela deixando da tarefa. -->
   </mat-expansion-panel>
 
   <mat-expansion-panel>
@@ -27,6 +30,7 @@
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-agenda-task [tasks]="tarefasParaOsProximosDias"></app-agenda-task>
+    <app-tests-datepipe>todayDate</app-tests-datepipe>
 
   </mat-expansion-panel>
 

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from './common-module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AgendaComponent } from './agenda/agenda.component';
@@ -52,7 +53,8 @@ import { DatepipeComponent } from './datepipe/datepipe.component';
     MatCheckboxModule,
     MatMenuModule,
   ],
-  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-br' }, TaskService],
+
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-br' }, TaskService , { provide: DatepipeComponent, useClass: DatepipeComponent}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

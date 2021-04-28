@@ -1,15 +1,22 @@
+import { DatePipe } from '@angular/common';
+import { Task } from './../services/models/task.model';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
-  selector: 'tests-datepipe',
+  selector: 'app-tests-datepipe',
   templateUrl: './datepipe.component.html',
-  styleUrls: ['./datepipe.component.scss']
+  styleUrls: ['./datepipe.component.scss'],
 })
+
 export class DatepipeComponent implements OnInit {
 
-  constructor() { }
+  todayDate: Date = new Date();
 
-  ngOnInit(): void {
+
+  constructor() {
+    class CommonModule {
+    }
   }
+
+  ngOnInit(): void {}
 
 }

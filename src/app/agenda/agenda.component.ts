@@ -1,5 +1,4 @@
-import { DatePipe } from '@angular/common';
-import { Task } from './../services/models/task.model';
+import { Task } from 'src/app/services/models/task.model';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TaskService } from '../services/task.service';
 
