@@ -3,12 +3,15 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-       <h3 class="style">LISTAR TODAS AS MINHAS TAREFAS </h3>
+        <h3 class="style">TODAS AS TAREFAS </h3>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-agenda-task [tasks]="tarefasParaHoje"></app-agenda-task>
+    <app-tests-datepipe>todayDate</app-tests-datepipe>
     <app-agenda-task [tasks]="tarefasParaAmanha"></app-agenda-task>
+    <app-tests-datepipe>todayDate</app-tests-datepipe>
     <app-agenda-task [tasks]="tarefasParaOsProximosDias"></app-agenda-task>
+    <app-tests-datepipe>todayDate</app-tests-datepipe>
   </mat-expansion-panel>
 
 </mat-accordion>
